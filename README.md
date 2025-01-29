@@ -86,8 +86,10 @@ vif(full_model)
 ```
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  If a predictor has a VIF that is greater than 5, multicollinearity is present. None of these predictors have a VIF $< 5$, in fact, most of them are extremely larger than 5. Therefore since `ORB%` and `DRB%` are included in `TRB%`, they will be discarded and only `TotReb_Perc` will be examined. Similarly, only `WS` and their effect on `Rank` will be examined.
+
 $$L_j(x) = \alpha_j - \beta_1 (\text{MP}) - \beta_2 (\text{PER}) - \beta_3 (\text{TrueShoot\_Perc}) - \beta_4 (\text{ThreePoint\_Att}) - \beta_5 (\text{FTr}) - \beta_6 (\text{TotReb\_Perc}) - $$
 $$\beta_7 (\text{Assist\_Perc}) - \beta_8 (\text{Steal\_Perc})- \beta_9 (\text{Block\_Perc}) - \beta_{10} (\text{Turnover\_Perc}) - \beta_{11} (\text{Usage\_Perc}) - \beta_{12} (\text{WS})$$
+
 \vspace{0.1cm}
 
 The model is fitted using either of the two R code chunks. 
